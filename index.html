@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="main-section">
+        <header>
+            <h1>Jakub Śrama - Portfolio</h1>
+        </header>
+        <nav>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O mnie</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section style="margin-left: 20px;" id="projects" class="projects-section">
+        <h2>Projekty</h2>
+        <p>Klikając zdjęcia poniżej przejdziesz na daną stronę projektu. Po więcej informajcji o projektach przejdź na zakładkę projekty.</p>
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <a href="https://cruz-diez.com">
+                    <img style="max-width: 450px;" src="cd_logo_transp.png" alt="cruz-diez-logo">
+                </a>
+            </div>
+            <div class="carousel-cell">
+                <a href="https://wgro.com.pl">
+                    <img style="max-width: 250px;" src="gielda_logo.png" alt="gielda_logo">
+                </a>
+            </div>
+          </div>
+    </section>
+    <section style="margin-left: 20px;" id="services" class="services-section">
+        <h2>Usługi</h2>
+        <p>Oferta moich usług obejmuje szeroki zakres działań związanych z projektowaniem i programowaniem. Klikając przycisk poniżej zostaniesz przeniesiony do kalkulatora usług</p>
+        <button style="margin-left: 20px;" onclick="window.location.href='services.html'" class="button">Kalkulator</button>
+    </section>
+    <section style="margin-left: 20px;" id="contact" class="contact-section">
+        <h2>Kontakt</h2>
+        <p>Jeżeli chcesz się ze mną skontaktować kliknij przyicsk poniżej:</p>
+        <button style="margin-left: 20px;" onclick="window.location.href='contact.html'" class="button">Kontakt</button>
+    </section>
+    <footer>
+        <div class="footer">Jakub Śrama 2024</div>
+    </footer>
+    
+</body>
+</html>

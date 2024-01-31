@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main-section">
+        <header>
+            <h1>Jakub Śrama - Portfolio</h1>
+        </header>
+        <nav>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O mnie</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="contact" class="contact-section-page">
+        <h2>Kontakt</h2>
+        <form id="contactForm">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Nazwisko:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="submitForm()">Wyślij</button>
+        </form>
+    </section>
+    <div id="successPopup" class="popup">
+        <span onclick="hidePopup()" class="close">&times;</span>
+        <p>Wiadomość została pomyślnie wysłana!</p>
+    </div>
+    <footer>
+        <div class="footer">Jakub Śrama 2024</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

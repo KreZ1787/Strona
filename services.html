@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main-section">
+        <header>
+            <h1>Jakub Śrama - Portfolio</h1>
+        </header>
+        <nav>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O mnie</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="services-section-page">
+        <h2>Kalkulator Kosztów Usług</h2>
+        <form id="calculatorForm">
+            <label for="graphicDesign">Projektowanie Graficzne (godziny):</label>
+            <input type="number" id="graphicDesign" name="graphicDesign" min="0">
+
+            <label for="projectManagement">Zarządzanie Projektem (godziny):</label>
+            <input type="number" id="projectManagement" name="projectManagement" min="0">
+
+            <label for="programming">Programowanie (godziny):</label>
+            <input type="number" id="programming" name="programming" min="0">
+
+            <button type="button" onclick="calculateCost()">Oblicz</button>
+
+            <p id="totalCost">Koszt za godzinę: <span>0 PLN</span></p>
+        </form>
+    </section>
+    <footer>
+        <div class="footer">Jakub Śrama 2024</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
